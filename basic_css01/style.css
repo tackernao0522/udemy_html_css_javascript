@@ -1,0 +1,11 @@
+div {
+  color: red;
+  font-size: 3rem; /* html要素に対して相対的な値でありhtmlのデフォルトは16pxなので1rem = 16pxである */
+  background-color: rgba(250, 92, 250, 0.406);
+  width: calc(100% / 3);
+  /* margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  margin-right: 0; */
+  margin: 100px 0 50px 100px;
+}
