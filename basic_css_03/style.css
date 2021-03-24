@@ -1,0 +1,73 @@
+/* カスケード順 */
+/* h1 {
+  color: red;
+}
+h1 {
+  color: blue;
+}
+h1 {
+  color: green; 一番下が優先
+} */
+
+/* 詳細度 (詳細度の高いclassの方が優先された) */
+/* h1 {
+  color: red;
+}
+.a {
+  color: blue; 優先
+}
+h1 {
+  color: green;
+} */
+
+/* #title {
+  color: red; 優先
+}
+.a {
+  color: blue;
+}
+h1 {
+  color: green;
+} */
+
+/* スコアリング */
+/* #title {
+  color: red; 優先
+}
+.a.b.c.d.e.f.g.h.i.j.k {
+  color: blue;
+} */
+
+/* !important */
+/* #title {
+  color: red;
+}
+.a.b.c.d.e.f.g.h.i.j.k {
+  color: blue;
+}
+h1 {
+  color: orange !important; 優先
+} */
+
+/* 継承 */
+/* li {
+  color: red;
+}
+li a[href*="google"] {
+  color: inherit; 親要素から値を引き継ぐ(liが親要素でありcolor: redを引き継ぐ)
+}
+li a[href*="youtube"] {
+  color: initial; ブラウザが持っているデフォルト値を引き継ぐ(元は黒であり青ではない)
+}
+li a[href*="apple"] {
+  color: unset; inheritとinitialの組み合わせみたいな感じ(inheritがある場合にはinheritであり、ない場合にはinitialになる(黒))
+} */
+
+/* すべてのプロパティ値のリセット */
+div {
+  background-color: orange;
+  border: 3px solid black;
+}
+.fix {
+  all: unset; /* すべてのCSSをリセットする */
+}
